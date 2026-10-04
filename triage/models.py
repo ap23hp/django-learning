@@ -5,5 +5,8 @@ class Category(models.Model):
     explanation = models.TextField()
     next_steps = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "categories"
+        
     def __str__(self):
         return self.name 
