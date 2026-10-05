@@ -15,3 +15,6 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ["id", "name", "explanation", "next_steps", "keywords"]
+
+class TriageRequestSerializer(serializers.Serializer):
+            text = serializers.CharField(max_length=1000)
